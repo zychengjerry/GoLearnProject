@@ -11,4 +11,10 @@ func main() {
 	var url = "Code=%d&endDate=%s"
 	var target_url = fmt.Sprintf(url, stockcode, enddate)
 	fmt.Println(target_url)
+
+	var a string = "Jerry Cheng"
+	fmt.Println(a)
+
+	var b, c int = 1, 2
+	fmt.Println(b, c)
 }
