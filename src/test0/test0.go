@@ -17,4 +17,19 @@ func main() {
 
 	var b, c int = 1, 2
 	fmt.Println(b, c)
+
+	// 没有初始化就是0值
+	var d int
+	fmt.Println(d)
+
+	// boolean零值为 false
+	var e bool
+	fmt.Println(e)
+
+	var i int
+	var f float64
+	var n bool
+	var s string
+	fmt.Printf("%v %v %v %q\n", i, f, n, s)
+
 }
