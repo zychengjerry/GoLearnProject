@@ -414,3 +414,21 @@ Eg. 初始化数组：
 
     balance[4] = 50.0
 
+
+**多维数组**
+
+以下为常用的多维数组声明方式：
+
+    var variable_name [SIZE1][SIZE2]...[SIZEN] 
+
+    Eg: 
+    var threedim [5][10][4]int    // 三维整型数组
+
+**二维数组**是最简单的多维数组，二维数组本质上是由一维数组组成的。二维数组定义方式如下：
+
+    var arrayName [ x ][ y ] variable_type
+
+variable_type 为 Go 语言的数据类型，arrayName 为数组名，二维数组可认为是一个表格，x 为行，y 为列。
+二维数组中的元素可通过 a[ i ][ j ] 来访问。
+
+
