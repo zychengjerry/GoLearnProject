@@ -584,3 +584,22 @@ ID：书籍ID
     或
     variable_name := structure_variable_type { key1: value1, key2: value2..., keyn: valuen}
 
+如果要**访问结构体成员**，需要使用点号 . 操作符，格式为：`结构体.成员名` 。
+结构体类型变量使用 struct 关键字定义。
+
+可以像其他数据类型一样将结构体类型作为参数传递给函数。
+
+可以定义指向结构体的指针，类似于其他指针变量，格式如下：
+
+`var struct_pointer *Books
+`
+
+以上定义的指针变量可以存储结构体变量的地址。查看结构体变量地址，可以将 & 符号放置于结构体变量前：
+
+`struct_pointer = &Book1
+`
+
+使用结构体指针访问结构体成员，使用 "." 操作符：
+
+`struct_pointer.title`
+
