@@ -704,3 +704,7 @@ Eg:
     var countryCapitalMap map[string]string /*创建集合 */
     countryCapitalMap = make(map[string]string)
 
+delete() 函数用于删除集合的元素, 参数为 map 和其对应的 key。
+
+    delete(countryCapitalMap, "France")
+
