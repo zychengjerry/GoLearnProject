@@ -708,3 +708,19 @@ delete() 函数用于删除集合的元素, 参数为 map 和其对应的 key。
 
     delete(countryCapitalMap, "France")
 
+
+## Go 19 - 递归 Recursion
+
+运行的过程中调用自己。Go 语言支持递归。但在使用递归时需要设置退出条件，否则递归将陷入无限循环中。
+
+递归函数对于解决数学上的问题是非常有用的，就像计算阶乘，生成斐波那契数列等。
+
+Eg: 
+
+    func recursion() {
+      recursion() /* 函数调用自身 */
+    }
+    
+    func main() {
+      recursion()
+    }
