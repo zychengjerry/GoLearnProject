@@ -792,3 +792,22 @@ Go 语言通过内置的错误接口提供了非常简单的错误处理机制�
         fmt.Println(err)
     }
 
+
+## Go 23 - 并发 Concurrent
+
+Coroutine - 
+
+Go 语言支持并发，我们只需要通过 go 关键字来开启 goroutine 即可。goroutine 是轻量级线程，goroutine 的调度是由 Golang 运行时进行管理的。
+
+goroutine 语法格式：
+
+    go 函数名( 参数列表 )
+
+    Eg： 
+    go f(x, y, z)
+
+    开启一个新的 goroutine: 
+    f(x, y, z)
+
+Go 允许使用 go 语句开启一个新的运行期线程， 即 goroutine，以一个不同的、新创建的 goroutine 来执行一个函数。 同一个程序中的所有 goroutine 共享同一个地址空间。
+
