@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+/*
+通过两个 goroutine 来计算数字之和，在 goroutine 完成计算后，它会计算两个结果的和
+*/
 func sum(s []int, c chan int) {
 	sum := 0
 	for _, v := range s {
